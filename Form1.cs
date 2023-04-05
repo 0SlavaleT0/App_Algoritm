@@ -188,7 +188,8 @@ namespace Form1
                 textBox6.Visible = true;
 
             }
-            else {
+            else
+            {
                 label3.Visible = true;
             }
         }
@@ -317,7 +318,7 @@ namespace Form1
 
         private bool isByte(byte i)
         {
-            try 
+            try
             {
                 Convert.ToByte(i);
                 return true;
@@ -363,6 +364,13 @@ namespace Form1
         private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            MessageBox.Show("The Google Map add-on is not available in your region!", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            this.Close();
         }
     }
 }
